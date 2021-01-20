@@ -43,7 +43,7 @@ class WriteProducts:
                                 ts,
                                 r["url"], r["name"], r["available"],
                                 None, r["art"],
-                                r["price"], r["currency"],
+                                r["price"]["new_price"], r["currency"],
                                 r["description"], r["parameters"]["material"],
                                 r["dimensions"], r["length"],
                                 r["height"], r["width"],
