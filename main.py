@@ -11,8 +11,8 @@ from bs4 import BeautifulSoup
 from write_db import WriteProducts
 
 
-sys.stdout.write("logs.log")
-sys.stderr.write("logs.log")
+sys.stdout = open("logs.log", "w")
+sys.stderr = open("logs.log", "w")
 
 
 def read_categories():
