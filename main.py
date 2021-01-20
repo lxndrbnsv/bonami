@@ -298,7 +298,7 @@ def get_variants():
     variants_list = []
     variants_div = bs.find("div", {"class": "s9xuijxfi"})
     if variants_div is None:
-        return None
+        return []
     else:
         for a in variants_div.find_all("a"):
             try:
@@ -445,7 +445,7 @@ if __name__ == "__main__":
                                 pictures=pictures,
                                 img_main=pictures[0],
                                 img_additional=pictures,
-                                img_main_url=f"http://3.127.139.108/api/images/4/{product_ref}.jpg",
+                                img_main_url=f"http://3.127.139.108/api/images/3/{product_ref}.jpg",
                                 img_additional_url=None,
                                 language="CZ",
                                 additional_attrs=None,

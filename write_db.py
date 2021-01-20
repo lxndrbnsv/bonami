@@ -38,7 +38,7 @@ class WriteProducts:
 
                         cursor.execute(
                             sql, (
-                                4, r["product_ref"],
+                                3, r["product_ref"],
                                 ts,
                                 ts,
                                 r["url"], r["name"], r["available"],
