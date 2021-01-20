@@ -1,3 +1,4 @@
+import sys
 import re
 import json
 import random
@@ -8,6 +9,10 @@ import traceback
 import requests
 from bs4 import BeautifulSoup
 from write_db import WriteProducts
+
+
+sys.stdout.write("logs.log")
+sys.stderr.write("logs.log")
 
 
 def read_categories():
